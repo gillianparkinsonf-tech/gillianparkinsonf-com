@@ -1,0 +1,832 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gillian Parkinson F. — Operating Partner for Founder-Led Businesses (EN/ES)</title>
+<meta name="description" content="Bilingual operating partner. I step inside founder-led businesses, connect what's disconnected, and direct execution until it works. 35+ years across 14 countries.">
+<meta name="theme-color" content="#8B7355">
+<link rel="canonical" href="https://gillianparkinsonf.com/">
+<link rel="alternate" hreflang="en" href="https://gillianparkinsonf.com/">
+<link rel="alternate" hreflang="es" href="https://gillianparkinsonf.com/es/">
+<link rel="alternate" hreflang="x-default" href="https://gillianparkinsonf.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Your business isn't broken. It's disconnected.">
+<meta property="og:description" content="I step in, connect the pieces, and make it work — in English or Spanish, wherever your business operates.">
+<meta property="og:url" content="https://gillianparkinsonf.com/">
+<meta property="og:image" content="https://gillianparkinsonf.com/assets/og-default.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Favicons -->
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   gillianparkinsonf.com — Design System
+   Tokens per Build Brief §3. Mobile-first.
+   ============================================================ */
+
+/* ---------- Tokens ---------- */
+:root {
+  --accent: #8B7355;        /* muted bronze/gold */
+  --accent-deep: #6E5B43;   /* hover/pressed */
+  --accent-soft: #C9B89A;   /* faint accent for large letters */
+  --dark: #1A1A1A;          /* body text, primary headings */
+  --soft-grey: #8A8580;     /* secondary text, captions */
+  --cream: #F5F2ED;         /* card backgrounds, score boxes */
+  --cream-deep: #ECE6DB;    /* slightly deeper cream for nested cards */
+  --rule: #D4D4D4;          /* dividers, cell borders */
+  --bg: #FFFFFF;            /* page background */
+
+  --serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --sans: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --container-text: 720px;
+  --container-wide: 1200px;
+
+  --space-section: clamp(48px, 8vw, 120px);
+  --space-section-tight: clamp(32px, 5vw, 64px);
+
+  --radius: 4px;
+  --transition: 200ms ease-out;
+}
+
+/* ---------- Reset ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--dark);
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+img, picture { max-width: 100%; height: auto; display: block; }
+a { color: var(--accent); text-decoration: none; transition: color var(--transition); }
+a:hover, a:focus-visible { color: var(--accent-deep); }
+button { font: inherit; cursor: pointer; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* ---------- Skip link ---------- */
+.skip-link {
+  position: absolute; left: -9999px; top: 8px;
+  background: var(--dark); color: #fff; padding: 8px 16px;
+  font-family: var(--sans); font-size: 14px; z-index: 1000;
+}
+.skip-link:focus { left: 8px; color: #fff; }
+
+/* ---------- Containers ---------- */
+.container { max-width: var(--container-wide); margin: 0 auto; padding: 0 24px; }
+.container-text { max-width: var(--container-text); margin: 0 auto; padding: 0 24px; }
+
+/* ---------- Header / Nav ---------- */
+.site-header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(212, 212, 212, 0.5);
+}
+.nav-wrap {
+  display: flex; align-items: center; justify-content: space-between;
+  max-width: var(--container-wide); margin: 0 auto;
+  padding: 16px 24px;
+}
+.brand {
+  font-family: var(--serif); font-size: 22px; font-weight: 500;
+  color: var(--dark); letter-spacing: 0.02em;
+}
+.brand:hover { color: var(--accent); }
+.nav-links {
+  display: flex; align-items: center; gap: 28px;
+  list-style: none; margin: 0; padding: 0;
+}
+.nav-links a {
+  font-family: var(--sans); font-size: 13px; font-weight: 500;
+  color: var(--dark); text-transform: uppercase; letter-spacing: 0.12em;
+}
+.nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--accent); }
+.nav-cta {
+  display: inline-block;
+  border: 1.5px solid var(--accent); color: var(--accent);
+  padding: 10px 20px; font-size: 12px; font-weight: 500;
+  text-transform: uppercase; letter-spacing: 0.14em;
+  transition: background var(--transition), color var(--transition);
+}
+.nav-cta:hover { background: var(--accent); color: #fff; }
+.lang-toggle {
+  background: transparent; border: 1px solid var(--rule);
+  padding: 6px 10px; font-size: 12px; font-weight: 500;
+  letter-spacing: 0.12em; color: var(--dark);
+}
+.lang-toggle:hover { border-color: var(--accent); color: var(--accent); }
+.nav-toggle { display: none; background: none; border: 0; padding: 8px; }
+.nav-toggle span { display: block; width: 22px; height: 2px; background: var(--dark); margin: 4px 0; }
+
+@media (max-width: 880px) {
+  .nav-toggle { display: block; }
+  .nav-links {
+    position: absolute; top: 100%; left: 0; right: 0;
+    flex-direction: column; align-items: flex-start; gap: 0;
+    background: #fff; border-bottom: 1px solid var(--rule);
+    padding: 16px 24px;
+    transform: translateY(-12px); opacity: 0; pointer-events: none;
+    transition: opacity var(--transition), transform var(--transition);
+  }
+  .nav-links li { width: 100%; }
+  .nav-links a { display: block; padding: 12px 0; }
+  .site-header[data-open="true"] .nav-links { opacity: 1; transform: translateY(0); pointer-events: auto; }
+}
+
+/* ---------- Section primitives ---------- */
+section { padding: var(--space-section) 0; }
+section.tight { padding: var(--space-section-tight) 0; }
+section.cream { background: var(--cream); }
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--sans); font-size: 12px; font-weight: 600;
+  color: var(--accent); text-transform: uppercase; letter-spacing: 0.2em;
+  margin-bottom: 20px;
+}
+
+h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; line-height: 1.15; color: var(--dark); margin: 0 0 24px; }
+h1 { font-size: clamp(38px, 6vw, 64px); letter-spacing: -0.01em; }
+h2 { font-size: clamp(30px, 4.5vw, 48px); letter-spacing: -0.005em; }
+h3 { font-size: clamp(22px, 2.8vw, 30px); }
+h4 { font-size: clamp(18px, 2vw, 22px); font-weight: 600; font-family: var(--sans); text-transform: uppercase; letter-spacing: 0.1em; }
+.italic-clause { font-style: italic; color: var(--accent); }
+
+p { margin: 0 0 1.2em; max-width: 65ch; }
+p.lead { font-size: 19px; color: var(--dark); }
+p.soft { color: var(--soft-grey); }
+p.italic-open { font-family: var(--serif); font-style: italic; font-size: 22px; color: var(--soft-grey); line-height: 1.5; }
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  font-family: var(--sans); font-size: 13px; font-weight: 500;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  padding: 16px 32px; border: 1.5px solid var(--accent);
+  color: var(--accent); background: transparent;
+  transition: background var(--transition), color var(--transition);
+}
+.btn:hover, .btn:focus-visible { background: var(--accent); color: #fff; }
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover, .btn-primary:focus-visible { background: var(--accent-deep); color: #fff; }
+.btn-link {
+  font-family: var(--sans); font-size: 13px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.14em;
+  color: var(--accent); border-bottom: 1px solid var(--accent);
+  padding-bottom: 4px;
+}
+.btn-link:hover { color: var(--accent-deep); border-color: var(--accent-deep); }
+
+/* ---------- Stats row ---------- */
+.stats-row {
+  display: grid; gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+  padding: 32px 0; margin: 48px 0 0;
+}
+.stat { text-align: center; }
+.stat-num {
+  display: block; font-family: var(--serif); font-size: clamp(36px, 5vw, 52px);
+  color: var(--accent); font-weight: 500; line-height: 1; margin-bottom: 8px;
+}
+.stat-label {
+  display: block; font-size: 11px; text-transform: uppercase;
+  letter-spacing: 0.16em; color: var(--soft-grey); font-weight: 500;
+}
+
+/* ---------- Pull quote ---------- */
+.pullquote {
+  border-left: 3px solid var(--accent);
+  padding: 8px 0 8px 24px; margin: 32px 0;
+  font-family: var(--serif); font-style: italic; font-size: 22px;
+  color: var(--dark); line-height: 1.5;
+}
+
+/* ---------- Cards ---------- */
+.card {
+  background: var(--cream); padding: 32px; border-radius: var(--radius);
+  border: 1px solid transparent;
+  transition: border-color var(--transition), transform var(--transition);
+}
+.card:hover { border-color: var(--accent); }
+
+.numbered-card {
+  display: grid; grid-template-columns: auto 1fr; gap: 20px 24px;
+  background: var(--cream); padding: 32px; margin-bottom: 16px;
+  border-left: 3px solid var(--accent);
+}
+.numbered-card .num {
+  font-family: var(--serif); font-size: 36px; color: var(--accent);
+  line-height: 1; font-weight: 500;
+}
+.numbered-card .quote {
+  font-family: var(--serif); font-style: italic; font-size: 20px;
+  color: var(--dark); margin: 0 0 8px;
+}
+.numbered-card .body { color: var(--soft-grey); margin: 0; font-size: 16px; }
+
+/* ---------- Three-column grids ---------- */
+.cols-3 {
+  display: grid; gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* ---------- Pillar block (B / M / AI) ---------- */
+.pillar {
+  border-top: 1px solid var(--rule); padding-top: 32px;
+}
+.pillar .big-letter {
+  font-family: var(--serif); font-size: 80px;
+  color: var(--accent-soft); line-height: 0.9; margin-bottom: 16px;
+}
+.pillar .pillar-name {
+  font-family: var(--sans); font-size: 13px; font-weight: 600;
+  color: var(--accent); text-transform: uppercase; letter-spacing: 0.18em;
+  margin-bottom: 16px;
+}
+.pillar ul { list-style: none; margin: 0; padding: 0; }
+.pillar li {
+  padding: 8px 0; border-bottom: 1px dotted var(--rule);
+  font-size: 15px; color: var(--dark);
+}
+.pillar li:last-child { border-bottom: 0; }
+
+/* ---------- Offer card (preview) ---------- */
+.offer-card {
+  background: var(--bg); border: 1px solid var(--rule);
+  padding: 36px 32px; display: flex; flex-direction: column;
+  transition: border-color var(--transition), background var(--transition);
+}
+.offer-card:hover { border-color: var(--accent); background: var(--cream); }
+.offer-card .offer-num {
+  font-family: var(--sans); font-size: 12px; font-weight: 600;
+  color: var(--accent); letter-spacing: 0.2em; margin-bottom: 8px;
+}
+.offer-card .offer-name {
+  font-family: var(--serif); font-size: 28px; margin-bottom: 12px;
+}
+.offer-card .offer-tag {
+  font-family: var(--serif); font-style: italic; font-size: 17px;
+  color: var(--soft-grey); margin-bottom: 16px;
+}
+.offer-card .offer-body { font-size: 15px; color: var(--dark); margin-bottom: 20px; }
+.offer-card .offer-meta {
+  font-family: var(--sans); font-size: 12px; font-weight: 600;
+  color: var(--accent); text-transform: uppercase; letter-spacing: 0.14em;
+  margin-bottom: 24px; padding-top: 16px; border-top: 1px solid var(--rule);
+}
+.offer-card .offer-cta { margin-top: auto; }
+
+/* ---------- Story card ---------- */
+.story-card {
+  background: var(--bg); border: 1px solid var(--rule);
+  padding: 36px; display: block; color: inherit;
+  transition: border-color var(--transition), background var(--transition);
+}
+.story-card:hover { border-color: var(--accent); background: var(--cream); color: inherit; }
+.story-card .story-tag {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  color: var(--accent); text-transform: uppercase; letter-spacing: 0.18em;
+  margin-bottom: 12px;
+}
+.story-card .story-headline {
+  font-family: var(--serif); font-size: clamp(24px, 3vw, 32px);
+  margin-bottom: 12px; color: var(--dark);
+}
+.story-card .story-preview {
+  color: var(--soft-grey); font-size: 16px; margin-bottom: 20px;
+}
+.story-card .inline-stats {
+  display: flex; gap: 24px; flex-wrap: wrap;
+  font-family: var(--serif); font-size: 18px; color: var(--accent);
+  padding: 12px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+  margin-bottom: 20px;
+}
+.story-card .read-link {
+  font-family: var(--sans); font-size: 12px; font-weight: 600;
+  color: var(--accent); text-transform: uppercase; letter-spacing: 0.14em;
+}
+.story-card:hover .read-link { color: var(--accent-deep); }
+
+/* ---------- Comparison table ---------- */
+.compare-table {
+  width: 100%; border-collapse: collapse; margin: 32px 0;
+  font-size: 15px;
+}
+.compare-table th, .compare-table td {
+  padding: 16px; border: 1px solid var(--rule); text-align: left; vertical-align: top;
+}
+.compare-table thead th {
+  background: var(--cream); font-family: var(--sans); font-size: 12px;
+  font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em;
+  color: var(--accent);
+}
+.compare-table tbody th {
+  font-family: var(--serif); font-style: italic; font-size: 17px;
+  font-weight: 500; color: var(--dark); background: #fff;
+}
+.compare-table .check { color: var(--accent); font-weight: 600; }
+
+/* ---------- "What I Don't Do" list ---------- */
+.dontdo-item {
+  border-top: 1px solid var(--rule); padding: 32px 0;
+}
+.dontdo-item:last-child { border-bottom: 1px solid var(--rule); }
+.dontdo-item h3 {
+  font-family: var(--serif); font-size: 24px; margin-bottom: 12px;
+  color: var(--dark);
+}
+.dontdo-item .dontdo-num {
+  font-family: var(--sans); font-size: 12px; font-weight: 600;
+  color: var(--accent); letter-spacing: 0.2em; margin-right: 12px;
+}
+.dontdo-item p { color: var(--soft-grey); margin-bottom: 0; }
+
+/* ---------- Tag pills ---------- */
+.tag-pills { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0; }
+.tag-pill {
+  display: inline-block;
+  border: 1px solid var(--accent); color: var(--accent);
+  padding: 8px 16px; border-radius: 999px;
+  font-family: var(--sans); font-size: 13px; letter-spacing: 0.04em;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  padding: clamp(48px, 8vw, 100px) 0 clamp(40px, 6vw, 72px);
+}
+.hero-grid {
+  display: grid; gap: 48px;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+@media (min-width: 880px) {
+  .hero-grid { grid-template-columns: 1.3fr 1fr; gap: 64px; }
+}
+.hero-eyebrow {
+  font-size: 11px; letter-spacing: 0.22em; color: var(--accent);
+  text-transform: uppercase; font-weight: 500; margin-bottom: 24px;
+  font-family: var(--sans);
+}
+.hero h1 { margin-bottom: 24px; }
+.hero .subhead {
+  font-family: var(--serif); font-style: italic; font-size: clamp(20px, 2.4vw, 26px);
+  color: var(--soft-grey); margin-bottom: 24px; line-height: 1.4;
+}
+.hero .body { font-size: 17px; color: var(--dark); margin-bottom: 32px; }
+.hero .cta-row { display: flex; flex-wrap: wrap; gap: 16px; }
+
+.hero-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: var(--cream);
+  border-radius: var(--radius);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--soft-grey); font-family: var(--serif); font-style: italic;
+  overflow: hidden;
+}
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; }
+.hero-photo.empty::after { content: 'Photo coming'; font-family: var(--serif); font-style: italic; color: var(--soft-grey); font-size: 18px; }
+
+/* ---------- Score box ---------- */
+.score-box {
+  background: var(--cream); border: 1px solid var(--rule);
+  padding: 32px; border-radius: var(--radius);
+  max-width: 540px; margin: 32px auto;
+}
+
+/* ---------- Lead magnet form ---------- */
+.lead-form { display: grid; gap: 16px; max-width: 520px; }
+.lead-form label {
+  font-family: var(--sans); font-size: 12px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.12em; color: var(--dark);
+}
+.lead-form input, .lead-form textarea {
+  font: inherit; padding: 14px 16px; border: 1px solid var(--rule);
+  background: #fff; border-radius: var(--radius);
+  transition: border-color var(--transition);
+}
+.lead-form input:focus, .lead-form textarea:focus {
+  border-color: var(--accent); outline: none;
+}
+.lead-form .honeypot { position: absolute; left: -9999px; }
+.lead-form .consent {
+  font-size: 13px; color: var(--soft-grey); line-height: 1.5;
+}
+.form-status {
+  font-family: var(--sans); font-size: 14px; padding: 12px 16px;
+  border-radius: var(--radius); display: none;
+}
+.form-status.ok { display: block; background: var(--cream); color: var(--dark); border-left: 3px solid var(--accent); }
+.form-status.err { display: block; background: #FBECEC; color: #7A2222; border-left: 3px solid #C44; }
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: var(--dark); color: #D9D5CE;
+  padding: 64px 0 32px; margin-top: 80px;
+  font-size: 14px;
+}
+.site-footer .footer-tagline {
+  font-family: var(--serif); font-size: clamp(22px, 2.6vw, 28px);
+  color: var(--cream); margin-bottom: 48px; line-height: 1.3;
+}
+.site-footer .footer-tagline .italic-clause { color: var(--accent-soft); }
+.footer-grid {
+  display: grid; gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.footer-col h5 {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  color: var(--accent-soft); text-transform: uppercase; letter-spacing: 0.18em;
+  margin: 0 0 16px;
+}
+.footer-col ul { list-style: none; margin: 0; padding: 0; }
+.footer-col li { margin-bottom: 10px; }
+.footer-col a { color: #D9D5CE; }
+.footer-col a:hover { color: var(--accent-soft); }
+.footer-bottom {
+  display: flex; flex-wrap: wrap; gap: 16px;
+  justify-content: space-between; align-items: center;
+  padding-top: 24px; font-size: 13px; color: #8A8580;
+}
+.footer-bottom a { color: #8A8580; margin-left: 16px; }
+.footer-bottom a:hover { color: var(--accent-soft); }
+
+/* ---------- Reveal on scroll (subtle) ---------- */
+.reveal { opacity: 0; transform: translateY(12px); transition: opacity 300ms ease-out, transform 300ms ease-out; }
+.reveal.in { opacity: 1; transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  html { scroll-behavior: auto; }
+}
+
+/* ---------- Story long-form layout ---------- */
+.story-article { padding: clamp(40px, 6vw, 80px) 0; }
+.story-article .story-hero {
+  text-align: center; max-width: 800px; margin: 0 auto 64px;
+}
+.story-article h1 { margin-bottom: 16px; }
+.story-article .story-sub {
+  font-family: var(--serif); font-style: italic; font-size: 22px;
+  color: var(--soft-grey); margin-bottom: 32px;
+}
+.story-article .story-section { max-width: var(--container-text); margin: 0 auto; padding: 32px 24px; }
+.story-article .rule {
+  width: 60px; height: 1px; background: var(--accent);
+  margin: 48px auto;
+}
+
+/* ---------- Utilities ---------- */
+.center { text-align: center; }
+.muted { color: var(--soft-grey); }
+.mt-0 { margin-top: 0; }
+.mb-0 { margin-bottom: 0; }
+.mb-sm { margin-bottom: 16px; }
+.mb-md { margin-bottom: 32px; }
+.mb-lg { margin-bottom: 64px; }
+.flow > * + * { margin-top: 1.2em; }
+
+</style>
+
+<!-- Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Gillian Parkinson Farfán",
+  "jobTitle": "Operating Partner & Fractional COO",
+  "url": "https://gillianparkinsonf.com",
+  "image": "https://gillianparkinsonf.com/assets/gillian-hero.jpg",
+  "address": { "@type": "PostalAddress", "addressLocality": "Philadelphia", "addressRegion": "PA", "addressCountry": "US" },
+  "knowsLanguage": ["en", "es"],
+  "sameAs": ["https://www.linkedin.com/in/gillianparkinsonf"]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="/" class="brand" aria-label="Gillian Parkinson F. home">Gillian Parkinson F.</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/" aria-current="page">Home</a></li>
+      <li><a href="/work-with-me.html">Work With Me</a></li>
+      <li><a href="/results.html">Results</a></li>
+      <li><a href="/stories.html">Stories</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/es/" class="lang-toggle" aria-label="Cambiar a Español">ES</a></li>
+      <li><a href="https://calendly.com/gillianparkinsonf/strategy-call" class="nav-cta">Strategy Call</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ========== 4.1 HERO ========== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-copy reveal">
+        <p class="hero-eyebrow">Business · Marketing · AI &amp; Systems · 35 Years · 14 Countries · EN/ES</p>
+        <h1>Your business isn&rsquo;t broken.<br><span class="italic-clause">It&rsquo;s disconnected.</span></h1>
+        <p class="subhead">I step in, connect the pieces, and make it work &mdash; in English or Spanish, wherever your business operates.</p>
+        <p class="body">You know what needs to be done. But nothing is aligning &mdash; not your team, not your systems, not your marketing. I fix that. Not with a report. With execution.</p>
+        <div class="cta-row">
+          <a href="https://calendly.com/gillianparkinsonf/strategy-call" class="btn btn-primary">Book a Strategy Call</a>
+          <a href="#is-this-you" class="btn-link">See if this is you &darr;</a>
+        </div>
+      </div>
+      <div class="hero-photo reveal">
+        <!-- TODO: Drop the existing signature headshot at assets/gillian-hero.jpg -->
+        <img src="assets/gillian-hero.jpg" alt="Gillian Parkinson Farfán, operating partner" loading="eager" width="600" height="800" onerror="this.style.display='none'; this.parentElement.classList.add('empty');">
+      </div>
+    </div>
+    <div class="stats-row">
+      <div class="stat"><span class="stat-num">+36%</span><span class="stat-label">Revenue from &minus;2% baseline</span></div>
+      <div class="stat"><span class="stat-num">$1.3M</span><span class="stat-label">Secured for 300+ businesses</span></div>
+      <div class="stat"><span class="stat-num">14</span><span class="stat-label">Countries lived &amp; worked</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 4.2 ENTROPY STORY ========== -->
+<section class="cream">
+  <div class="container-text reveal">
+    <h2>Companies don&rsquo;t break down suddenly.<br><span class="italic-clause">They calcify into who they used to be.</span></h2>
+    <div class="flow">
+      <p>You built something that worked. You hired. You added tools. You added offers. You added team. Each decision was right at the time.</p>
+      <p>But over years, a layer forms. Systems duct-taped together. Roles fuzzy. Meetings stacked on meetings. Marketing promising what operations can&rsquo;t deliver. The founder doing five jobs.</p>
+      <p><strong>Nothing is broken. Everything drags.</strong></p>
+      <p>This is the moment most consultants arrive with a deck. I don&rsquo;t. I come inside the business, see the structure underneath the heaviness, and start unweighting it &mdash; until the business runs lighter than it has in years &mdash; and you remember why you started it.</p>
+      <p>Revenue rises. Costs fall. Teams align. But none of those are the work. They&rsquo;re what happens after the work.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 4.3 IS THIS YOU? ========== -->
+<section id="is-this-you">
+  <div class="container-text">
+    <div class="reveal">
+      <p class="eyebrow">Before you scroll any further</p>
+      <h2>Stop. <span class="italic-clause">Does this sound familiar?</span></h2>
+      <p class="lead">If you recognize yourself in two or more of these, you don&rsquo;t have a strategy problem. You have a disconnection problem. And that&rsquo;s exactly what I fix.</p>
+    </div>
+  </div>
+  <div class="container" style="max-width: 880px; margin-top: 48px;">
+    <div class="numbered-card reveal">
+      <div class="num">01</div>
+      <div>
+        <p class="quote">&ldquo;I&rsquo;m making money &mdash; but it&rsquo;s harder than it should be.&rdquo;</p>
+        <p class="body">The revenue is there but the effort to maintain it is unsustainable. Something is leaking and you can&rsquo;t find where.</p>
+      </div>
+    </div>
+    <div class="numbered-card reveal">
+      <div class="num">02</div>
+      <div>
+        <p class="quote">&ldquo;My team doesn&rsquo;t execute the way I need them to.&rdquo;</p>
+        <p class="body">You&rsquo;ve explained it. You&rsquo;ve repeated it. They try &mdash; but something between your vision and their execution keeps breaking down.</p>
+      </div>
+    </div>
+    <div class="numbered-card reveal">
+      <div class="num">03</div>
+      <div>
+        <p class="quote">&ldquo;My marketing feels scattered. Nothing is converting consistently.&rdquo;</p>
+        <p class="body">You&rsquo;re posting, running ads, showing up &mdash; but the messaging isn&rsquo;t landing. You don&rsquo;t know if it&rsquo;s the message, the platform, or the offer.</p>
+      </div>
+    </div>
+    <div class="numbered-card reveal">
+      <div class="num">04</div>
+      <div>
+        <p class="quote">&ldquo;I have ideas, plans, strategies &mdash; but no clean execution.&rdquo;</p>
+        <p class="body">The vision is clear in your head. The gap between that vision and what&rsquo;s actually happening is exhausting you.</p>
+      </div>
+    </div>
+    <div class="numbered-card reveal">
+      <div class="num">05</div>
+      <div>
+        <p class="quote">&ldquo;I&rsquo;m tired of carrying everything myself.&rdquo;</p>
+        <p class="body">You built this. You&rsquo;ve held it together. But you were never supposed to be doing all of it alone &mdash; and you know it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 4.4 THREE PILLARS ========== -->
+<section class="cream">
+  <div class="container">
+    <div class="container-text reveal" style="padding: 0; text-align: center;">
+      <h2>Three pillars. <span class="italic-clause">One outcome: a business that works.</span></h2>
+      <p class="lead">Most businesses don&rsquo;t have one problem. They have multiple disconnected ones. I work all three &mdash; because they&rsquo;re never separate.</p>
+    </div>
+    <div class="cols-3" style="margin-top: 64px;">
+      <div class="pillar reveal">
+        <div class="big-letter">B</div>
+        <div class="pillar-name">Business</div>
+        <ul>
+          <li>Structure &amp; operations</li>
+          <li>Team alignment &amp; accountability</li>
+          <li>Workflow &amp; execution</li>
+          <li>Bottleneck removal</li>
+          <li>Growth direction</li>
+        </ul>
+      </div>
+      <div class="pillar reveal">
+        <div class="big-letter">M</div>
+        <div class="pillar-name">Marketing</div>
+        <ul>
+          <li>Positioning &amp; messaging</li>
+          <li>Offer alignment</li>
+          <li>Content structure</li>
+          <li>Conversion analysis</li>
+          <li>Bilingual market strategy (EN/ES)</li>
+        </ul>
+      </div>
+      <div class="pillar reveal">
+        <div class="big-letter">AI</div>
+        <div class="pillar-name">AI &amp; Systems</div>
+        <ul>
+          <li>AI adoption</li>
+          <li>Workflow automation</li>
+          <li>CRM &amp; pipeline setup</li>
+          <li>Operational efficiency</li>
+          <li>Tool integration</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-text" style="margin-top: 64px; text-align: center;">
+      <p class="italic-open">Most marketing doesn&rsquo;t fail because of creativity. It fails because the business behind it isn&rsquo;t structured to support it. I connect all three. That&rsquo;s what&rsquo;s rare. That&rsquo;s what sells.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 4.5 FEATURED CASE STUDY ========== -->
+<section>
+  <div class="container-text reveal">
+    <p class="eyebrow">Featured Story</p>
+    <h2>From dashboard to <span class="italic-clause">global table.</span></h2>
+    <p>Liquimoly Chile. The CEO was preparing to sell the company. Four product divisions, a tired team, two consecutive years of declining revenue, and no marketing presence anyone outside the office could name.</p>
+    <p>In year one I rebuilt the operating model. Marketing department from scratch. Sales contracts renegotiated. Brand repositioned through the Chilean motocross team. Year-one results: <strong>+36% revenue, &minus;10% costs.</strong> By year four I&rsquo;d also written the regional development agreement that opened South and Central America for the parent company.</p>
+    <div class="stats-row" style="margin: 40px 0;">
+      <div class="stat"><span class="stat-num">+36%</span><span class="stat-label">Revenue, year 1</span></div>
+      <div class="stat"><span class="stat-num">&minus;10%</span><span class="stat-label">Costs, year 1</span></div>
+      <div class="stat"><span class="stat-num">4 yrs</span><span class="stat-label">Total tenure</span></div>
+    </div>
+    <p><a href="/stories/liquimoly-chile.html" class="btn-link">Read the full story &rarr;</a></p>
+  </div>
+</section>
+
+<!-- ========== 4.6 THREE OFFERS PREVIEW ========== -->
+<section class="cream">
+  <div class="container">
+    <div class="container-text reveal" style="padding: 0; text-align: center;">
+      <h2>Three ways we work. <span class="italic-clause">Each starts with a 30-minute call.</span></h2>
+    </div>
+    <div class="cols-3" style="margin-top: 56px;">
+      <a href="/work-with-me.html#diagnostic" class="offer-card reveal" style="text-decoration: none;">
+        <div class="offer-num">01</div>
+        <div class="offer-name">The Diagnostic</div>
+        <div class="offer-tag">Find out what&rsquo;s actually broken &mdash; in writing.</div>
+        <p class="offer-body">A focused written assessment across business, marketing, and systems. You leave knowing exactly what&rsquo;s broken, what matters, and what to do next.</p>
+        <div class="offer-meta">$2,500&ndash;$5,000 &middot; 2&ndash;3 weeks</div>
+        <span class="btn-link offer-cta">Learn more &rarr;</span>
+      </a>
+      <a href="/work-with-me.html#fix" class="offer-card reveal" style="text-decoration: none;">
+        <div class="offer-num">02</div>
+        <div class="offer-name">The Fix</div>
+        <div class="offer-tag">I come inside and rebuild what&rsquo;s broken.</div>
+        <p class="offer-body">I come inside the business and rebuild what&rsquo;s broken &mdash; operations, team, marketing, systems, or all three. You end with a business that runs.</p>
+        <div class="offer-meta">$7,500&ndash;$20,000 &middot; 60&ndash;120 days</div>
+        <span class="btn-link offer-cta">Learn more &rarr;</span>
+      </a>
+      <a href="/work-with-me.html#partnership" class="offer-card reveal" style="text-decoration: none;">
+        <div class="offer-num">03</div>
+        <div class="offer-name">The Operating Partnership</div>
+        <div class="offer-tag">Embedded fractional COO.</div>
+        <p class="offer-body">I sit inside your business as your operating partner, directing execution, holding alignment, making the calls.</p>
+        <div class="offer-meta">$5,000&ndash;$10,000/mo &middot; 6-month minimum</div>
+        <span class="btn-link offer-cta">Learn more &rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 4.7 ABOUT TEASER ========== -->
+<section>
+  <div class="container-text reveal center">
+    <h2>She didn&rsquo;t find her path. <span class="italic-clause">She built it.</span></h2>
+    <p class="lead">35+ years inside businesses across 14 countries. Two languages. One obsession: making businesses actually work &mdash; not on paper, in practice. I don&rsquo;t hand clients a deck and walk away. I come in. I stay. I direct execution until it&rsquo;s working.</p>
+    <p style="margin-top: 32px;"><a href="/about.html" class="btn-link">Read more about Gillian &rarr;</a></p>
+  </div>
+</section>
+
+<!-- ========== 4.8 FINAL CTA + LEAD MAGNET ========== -->
+<section class="cream">
+  <div class="container-text reveal center">
+    <h2>If you&rsquo;re reading this at 2am wondering what comes next &mdash; <span class="italic-clause">that&rsquo;s exactly who I work with.</span></h2>
+    <p class="lead">The Strategy Call is a working conversation &mdash; not a pitch. In 30 minutes I tell you exactly what I see in your business and whether I can fix it. You leave with clarity either way.</p>
+    <p style="margin: 32px 0;"><a href="https://calendly.com/gillianparkinsonf/strategy-call" class="btn btn-primary">Book a Strategy Call &rarr;</a></p>
+
+    <div class="score-box" style="text-align: left; margin-top: 56px;">
+      <p class="eyebrow" style="margin-bottom: 8px;">Or download the booklet</p>
+      <h3 style="font-size: 24px; margin-bottom: 8px;"><em>The 7 Signs Your Business Is Disconnected</em></h3>
+      <p class="muted" style="font-size: 15px;">Free PDF. 21-question self-diagnostic across the seven signs &mdash; with a scoring scale and a recommended next step. 10 minutes.</p>
+      <form class="lead-form" data-source="lead_magnet_7_signs" novalidate>
+        <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div>
+          <label for="lf-email">Email</label>
+          <input id="lf-email" type="email" name="email" required autocomplete="email" placeholder="you@yourcompany.com">
+        </div>
+        <div>
+          <label for="lf-name">First name <span class="muted" style="text-transform: none; letter-spacing: 0; font-weight: 400;">(optional)</span></label>
+          <input id="lf-name" type="text" name="firstName" autocomplete="given-name">
+        </div>
+        <div>
+          <label for="lf-challenge">What&rsquo;s your biggest challenge right now? <span class="muted" style="text-transform: none; letter-spacing: 0; font-weight: 400;">(optional)</span></label>
+          <input id="lf-challenge" type="text" name="challenge" placeholder="In one sentence">
+        </div>
+        <button type="submit" class="btn btn-primary">Get the PDF &rarr;</button>
+        <p class="consent">By downloading, you&rsquo;ll also get occasional emails from Gillian about systems, operations, and the work. Unsubscribe anytime.</p>
+        <div class="form-status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+  <div class="container">
+    <p class="footer-tagline">Your business isn&rsquo;t broken. <span class="italic-clause">It&rsquo;s disconnected.</span></p>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/work-with-me.html">Work With Me</a></li>
+          <li><a href="/results.html">Results</a></li>
+          <li><a href="/stories.html">Stories</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Sister Brands</h5>
+        <ul>
+          <li><a href="https://alchemyliferetreats.com" rel="noopener">Alchemy Life Retreats</a></li>
+          <li><a href="https://gpfbusinesssystems.com" rel="noopener">GPF Business Systems</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/gillianparkinsonf" rel="noopener">LinkedIn</a></li>
+          <li><a href="mailto:gillian@gillianparkinsonf.com">Email</a></li>
+          <li><a href="https://wa.me/" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://calendly.com/gillianparkinsonf/strategy-call" rel="noopener">Strategy Call</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Languages</h5>
+        <ul>
+          <li><a href="/" aria-current="page">English</a></li>
+          <li><a href="/es/">Español</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Gillian Parkinson Farfán. All rights reserved.</span>
+      <span>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms-conditions.html">Terms</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js" defer></script>
+</body>
+</html>
