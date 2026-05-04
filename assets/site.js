@@ -59,6 +59,27 @@
       var hp = form.querySelector('input[name="website"]');
       if (hp && hp.value) { return; }
 
+      // Rate-limit: max 5 submits per hour (best-effort client-side via
+      // localStorage). NOTE: spec calls for server-side rate-limiting per IP
+      // — without a server here this is the best we can do; the GHL webhook
+      // / backend should still enforce its own limits.
+      try {
+        var RL_KEY = 'gpf_lead_submits';
+        var RL_WINDOW_MS = 60 * 60 * 1000; // 60 minutes
+        var RL_MAX = 5;
+        var now = Date.now();
+        var stored = [];
+        try { stored = JSON.parse(localStorage.getItem(RL_KEY) || '[]'); } catch (e) { stored = []; }
+        if (!Array.isArray(stored)) { stored = []; }
+        var recent = stored.filter(function (t) { return typeof t === 'number' && (now - t) < RL_WINDOW_MS; });
+        if (recent.length >= RL_MAX) {
+          setErr(status, 'Too many submissions. Please try again later.');
+          return;
+        }
+        recent.push(now);
+        localStorage.setItem(RL_KEY, JSON.stringify(recent));
+      } catch (e) { /* localStorage unavailable — proceed without rate limit */ }
+
       var data = {
         email: form.email && form.email.value.trim(),
         firstName: form.firstName && form.firstName.value.trim(),
